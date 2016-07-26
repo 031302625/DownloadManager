@@ -1,0 +1,17 @@
+PODS:
+  - DOUAudioStreamer (0.2.15)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+
+DEPENDENCIES:
+  - DOUAudioStreamer (= 0.2.15)
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  DOUAudioStreamer: 14f217bab01b52171fc2bd7d96e1f8fdd50fce68
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+
+PODFILE CHECKSUM: 154e1019b4f2ded14e16ebd7837095f219a9c7bc
+
+COCOAPODS: 1.0.0

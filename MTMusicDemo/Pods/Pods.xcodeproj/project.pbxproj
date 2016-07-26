@@ -1,0 +1,1128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02688A3AC1104171ADD7048DD3787CFA /* DOUAudioEventLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = A80613BC93456A87E8909C106B927F4F /* DOUAudioEventLoop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04128B0E53194DE3C5164AC6DFC3D2F7 /* DOUAudioStreamer+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F26C6DA51A85CFF37F14C63AB297 /* DOUAudioStreamer+Options.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		05B638931DCA43D4FFA6B2D2A86115D7 /* DOUEAGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63460E747B44A9A718D785682CB0A1D3 /* DOUEAGLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AC78DD9AAAA1CCE7D0ACABEB36775FB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58903F380365B051205618D2B14E153E /* OpenGLES.framework */; };
+		0FC0141E9D66998E2BC9EF318214FF41 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A44CF6A42B4C3A72D47AE36509A61E29 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		10502E01B8C2B1E1F37B392A064DEDE2 /* DOUAudioFilePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC705F3A9F4B70628A4BDBBB5DA835 /* DOUAudioFilePreprocessor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		18EE8D33329021C98725861FF05294DF /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D56C339D4E69AB2DD0BE71D66BF149 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1947D6F3B2ADDAF25DBC819E91B1EB35 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D4659E90855BFEE499604A53D8DBEE95 /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19810986F428B7D45388549C386B0364 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 71FCAC36397233B10D387B31442501CC /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19980BF298B835DFA7A00EF7EF0FB691 /* DOUAudioFile.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC868E169665427A123A33F1B19AB64 /* DOUAudioFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BF9FCDC89DD1C7EF39D0437799C5A46 /* DOUAudioRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D805EDFF235053F1BAABFF620CAB569 /* DOUAudioRenderer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20129C70970F21CFA98E19C09CD43304 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE0387FF6FABF340D7CBFB7922A8D0 /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2017E47DA83874EDEB9EF451AE4CA83C /* DOUAudioFrequencyAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBD9225FBF039EC303E634995D48A33 /* DOUAudioFrequencyAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		218E64C304FFBB084429E262097BF331 /* DOUAudioStreamer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 444C4DE92CB6E47AB0F0429F3208A4B7 /* DOUAudioStreamer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		281C9550741C50DA99A3F55EC37A01F1 /* DOUAudioSpatialAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AD2D8D2FB04204CE550BF228733D84 /* DOUAudioSpatialAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EF2857A858C62CE1C2F203A0FD70E10 /* DOUAudioBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E1708A9E2E3B14C5CC3193408A98F62 /* DOUAudioBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3122D0AA7789106A4DAB1D9C3BA0F9A8 /* DOUAudioStreamer+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FDAB53C902E40D86D4551938804E04F /* DOUAudioStreamer+Options.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31FA7C846806699503E820967ACD3C0B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0635BA828F4A0DDBF8F06AE2B25FD5 /* MediaPlayer.framework */; };
+		33114B46571E61AA61C0EA66C608BD8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE16A138A81BC6003E2E23D64B98F3 /* Foundation.framework */; };
+		38A7CC4F2BC041042712A5FA1BD2CB2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC62A8B0C4085E8466CB931DBCE027A /* QuartzCore.framework */; };
+		3A4684ED0157A10C50B6EE8DDE32C914 /* DOUAudioAnalyzer+Default.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B69D905D7692924F32B775D1F7D49C4 /* DOUAudioAnalyzer+Default.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A514B1E6F5A34F4F2DD745C18F2FC63 /* DOUAudioRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DCBA52DA16DCB3366BA1E3A2D4444B /* DOUAudioRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43C156894E74E1CB2C354D2F52E7A077 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBAFEB70312B2B2BD982E38F7993581 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CFCC1030AEAB5838F3F1D36FBE8987 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A601D4648F21D5BEAB05A164ED90AF1 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4797B015A298B17106FF371CCF68406B /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D35B4F5EADE4EE48AD50E547EA691 /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4B80195CC9E343CFBEF93240532BAD43 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C3AC3DB9D225F8B7B84886D8D1D02B /* MobileCoreServices.framework */; };
+		4BD8773DECB27A83075DB5A4897A4658 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3EB31915627C8886B9932EB1C08699 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		515B8D3A3DAB237434480661D93D0E27 /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 22453314EF781C1168EA05CCAFEAACA6 /* DOUAudioAnalyzer+Default.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		569E6AA601234C855548AEA15EF491B7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F2D723FAFBB06FF3D4E2DB355E7041 /* CoreAudio.framework */; };
+		578ED2C9E61155A8539158191D00C545 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F2B96A60D9F3B77AE8F4806BC4DC5 /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		587BBEACAEEFCDA7E8FE5CE10A50F2FD /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC4A8C12A57E2F6A77301DE0960969F /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C89AAAFA66048023D99CD773AC769E5 /* DOUAudioPlaybackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F26BE002184399CBA0C41C77FA9B5 /* DOUAudioPlaybackItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		607BCD6EB3DADAAEA14B97A122A916FC /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FED2AB394B10CF7D22BF74C7AE0E33 /* DOUAudioAnalyzer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A2B6DBDD08CD3F087CC56D354B48858 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3E6BFF5F07D9D5FE2D81CAA840F4AF /* ImageIO.framework */; };
+		77E78FB2117200F1DAD425BA6C004D9A /* DOUAudioFileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED886D07896F29F600B74AAC8B32B50 /* DOUAudioFileProvider.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7B0CBF4EBD30C92AEE692533E181F7BD /* DOUAudioFilePreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 249FD7723827E393FE2ABCF3479330F4 /* DOUAudioFilePreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F27AE72BE611F8422EE1C882B05F3D9 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6A4B277FC8CE60266C0B257DA18F9 /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83A8059D21D6330AD5DF32AD39E9ABA9 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D152C132BF0850733B71A2DD02AA24C /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		84D9976D74888254766139786FC35ABA /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADFEEFED784B488296676BF160A2E74 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A958560C6BB6168CF41BD59588ABEA6 /* DOUAudioStreamer.h in Headers */ = {isa = PBXBuildFile; fileRef = D1BE7856F469FF5FAF7BEE85911AA9DA /* DOUAudioStreamer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FD801D5F6BBEFF3AD3815A0F825539E /* Pods-MTMusicDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 363939E16A5596358E27D244B5F442E9 /* Pods-MTMusicDemoUITests-dummy.m */; };
+		96A9238D869289C03F849575D109CF22 /* NSData+DOUMappedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 218918CCD22F80ECA78D66661C815FB8 /* NSData+DOUMappedFile.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9AA464DB367DB91F7F79DA339BC3C170 /* DOUAudioStreamer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3D75A97C47A39B965E693AEAB9F647 /* DOUAudioStreamer-dummy.m */; };
+		9E313EBFF35F7598A0E727EABA0ECA90 /* DOUAudioEventLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA291EDF063A1D6DFA656CDDDEB724 /* DOUAudioEventLoop.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A3B076BD23A7FDC10D0C3F4DD0A4D232 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE16A138A81BC6003E2E23D64B98F3 /* Foundation.framework */; };
+		A59DA6402E69C4BC3F19AA198068D6B1 /* DOUEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F73409FEC184F31279CB1DAE2798D0 /* DOUEAGLView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A93C29DD00EE5872A12439672944E650 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE68309B825E3BCFFAB4A83BAECDF333 /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACDA041E1445229D49F72DFB418E97BB /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8810AD6251EEBDFC91C926E3D5F871EC /* SDWebImage-dummy.m */; };
+		AD0B55020BE616605CAF305E7902A016 /* DOUAudioFileProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 667FF060052ADFDA45CB70437683E98E /* DOUAudioFileProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0086CC9E91F95DE51A2F132D8527BBF /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 17831A9A300B71F01821E95E65E36814 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2D4FA96F36032A793FABB1B3AC04376 /* DOUAudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542592AAD40C9F3128682DBBAF170D1 /* DOUAudioStreamer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B6E8C7DDAAAD30B44DDA8AB9678D9D34 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 834637FDFD226A739A5AC553D7AD5E44 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BA77A67C22A6E7719679A40B26193CCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE16A138A81BC6003E2E23D64B98F3 /* Foundation.framework */; };
+		BB78302DC7CB7B6612A654392BA232F4 /* DOUAudioSpatialAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF59147E1F6BB9836F3B48F43D02760 /* DOUAudioSpatialAnalyzer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BD488B298157D668C004B59167FEC251 /* DOUMPMediaLibraryAssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE07C0D78E5B04E797929AF47F1439 /* DOUMPMediaLibraryAssetLoader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BDFF01E29219DCC25BCA914631475815 /* DOUAudioLPCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD11FDB828179AD269B74C115960E85 /* DOUAudioLPCM.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C25EBB7B652B85828281DEF0CBA6C9E3 /* DOUAudioAnalyzer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A1815EA8554AABE37E4B7941B9CE0C /* DOUAudioAnalyzer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32F68133887752D00E2283F643530F3 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9435F7D96FCEF0BA3FB5EBC8867275 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C41D6DC16BB3583049D50710CD9D160B /* DOUSimpleHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D109FF5B6AE0825DDDA72EF9FE22CEA7 /* DOUSimpleHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C483169672651CBF5C5E59F5B2E3C1A5 /* DOUAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 02398D2FD64066EA50F1932A74F80399 /* DOUAudioDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C6DFAB3B9FC002326D44A52CE6DFD57A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE16A138A81BC6003E2E23D64B98F3 /* Foundation.framework */; };
+		C8B0A60AE557DAF64EEBBD804322AE76 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FED08AC3E4DF01C1516754B31670FC /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB24DF934FADCCC68D04356470CCA4E8 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 835228776622211BD49CA67EF9F57F81 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6711B5093C6B6C594943A608907071 /* DOUAudioVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7263FC501FD7B4CC35F02FC9CB303B0D /* DOUAudioVisualizer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CBB2036D8F67093FFD19CAEFD65599B3 /* DOUMPMediaLibraryAssetLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E61B66EE6053BFCD4FCD9753787E1012 /* DOUMPMediaLibraryAssetLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE116F263C2EC6CEF9797B32A825C279 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E60482147E41ABCC99FE0F2CB035C99 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEFC853AEDB799F21EDC593E02EAB383 /* Pods-MTMusicDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B458808B5C7AF7D58AED0CD7830C64E1 /* Pods-MTMusicDemo-dummy.m */; };
+		CFBD269078732F653128E28C3FE7DC1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EA2A0CB4EE725B00A864ABF3609D8C /* AVFoundation.framework */; };
+		D91E60246FC8DBE1ED99FADE1524F58A /* DOUSimpleHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A8659F40DE0AE82FDB915885F7631D /* DOUSimpleHTTPRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DA76BB21D1FE399EEA1FFD8DA7D249DA /* DOUAudioAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2202D9760B94924F3E3C5A3130CF1B14 /* DOUAudioAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB2569CF824ED5A1A1443D4A26DF3CAC /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFCF377302FD1352915BFA72CF3C53B /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD856498EFDEF474BEDBA2ED0F5211EB /* DOUAudioDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F15088952400103B9F3EEBAB8D375A /* DOUAudioDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE3041F86E8648B4C596CCCB497B593D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE16A138A81BC6003E2E23D64B98F3 /* Foundation.framework */; };
+		DEFCD2D1DB7540680461C58E9A1BDA61 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 388BF1700466A1A02C2F1DEBF5AE9516 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1C85D873E45E797F287DF201DF2DC36 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7E10D2B1530CF7264979FF18B55091 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1EA75FDD2FA058C6C43239B3D33E084 /* NSData+DOUMappedFile.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1F6C19B2CC93D6CD498B03B17298D3 /* NSData+DOUMappedFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7EFDE99A10B78FCCE68BB96D1B950EC /* Pods-MTMusicDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB955DEEDE3AD6C2BE615D3E26778D1 /* Pods-MTMusicDemoTests-dummy.m */; };
+		E858268814D1A5EC2F7BC3542EB834CF /* DOUAudioLPCM.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBA0114DA4E23159189700B8474683A /* DOUAudioLPCM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8EE39217E8E7180E270C2BA9E4DD160 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E5070C2942E62B6DA0D6A5F875597A /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EB2EEA8892612C75B617E841B965E3A0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1A7154597370CF46E5837328F0E2A4 /* Accelerate.framework */; };
+		EE12C7EA4336FB49BE1426264F3D8563 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 82138E441C9B4DF7CE73EDD4B6A3E077 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE3C36D25D11328E2D943C4B53D8ECFC /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A60005D722313EE643E282B40BE1F15 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F027D73EAE4F9EAE0C97BA75C6FBDF59 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C15B88DF81DB187F4C8465FF97E40EED /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5DBB0496CDA74AD20DF640BB706CC11 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E739ABAA22451333724280979E77CE65 /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F752B63B4E925CD5EF4562F3922DB9A9 /* DOUAudioPlaybackItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E3C389110AD31E0270BB95386176EF /* DOUAudioPlaybackItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC1B9333FA4F13DF59E29B99B149F1E9 /* DOUAudioVisualizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4822C5DCCA22A262896608C4D43CD0 /* DOUAudioVisualizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD008E0D9346BC4D2287B50719AA829E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA22846BE7CDF11E0B42EC092CDCBA76 /* CFNetwork.framework */; };
+		FE20DE3DDB2A9BB792B0A1F287551DDB /* DOUAudioFrequencyAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33260B47388064BECE85FCA11178DA44 /* DOUAudioFrequencyAnalyzer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FEC787F5585081E25DEE0E3B3769ED13 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47955EDB765C4974F12E13A0A96F3C8 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74217BEA444E960E13A7A69D6705BADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8140743ADD22ECAE58F4BD6594C55A;
+			remoteInfo = SDWebImage;
+		};
+		97B622EB42647C51E092C435D822F980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D26A6D000EA63A2C3BBCF016605D3D4E;
+			remoteInfo = DOUAudioStreamer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014108A858D40912283CFECA70DB5DDA /* Pods-MTMusicDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTMusicDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		02398D2FD64066EA50F1932A74F80399 /* DOUAudioDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioDecoder.m; path = src/DOUAudioDecoder.m; sourceTree = "<group>"; };
+		02EE07C0D78E5B04E797929AF47F1439 /* DOUMPMediaLibraryAssetLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUMPMediaLibraryAssetLoader.m; path = src/DOUMPMediaLibraryAssetLoader.m; sourceTree = "<group>"; };
+		0A7C1DE3BBAAFC02B2ACC2AB4AF30DDB /* Pods-MTMusicDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTMusicDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13FD61EDD2EB4547BF9C062E5683BAA7 /* Pods-MTMusicDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MTMusicDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15A8659F40DE0AE82FDB915885F7631D /* DOUSimpleHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUSimpleHTTPRequest.m; path = src/DOUSimpleHTTPRequest.m; sourceTree = "<group>"; };
+		17831A9A300B71F01821E95E65E36814 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		1ADFEEFED784B488296676BF160A2E74 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		1AFC705F3A9F4B70628A4BDBBB5DA835 /* DOUAudioFilePreprocessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioFilePreprocessor.m; path = src/DOUAudioFilePreprocessor.m; sourceTree = "<group>"; };
+		218918CCD22F80ECA78D66661C815FB8 /* NSData+DOUMappedFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+DOUMappedFile.m"; path = "src/NSData+DOUMappedFile.m"; sourceTree = "<group>"; };
+		2202D9760B94924F3E3C5A3130CF1B14 /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioAnalyzer.h; path = src/DOUAudioAnalyzer.h; sourceTree = "<group>"; };
+		22453314EF781C1168EA05CCAFEAACA6 /* DOUAudioAnalyzer+Default.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DOUAudioAnalyzer+Default.m"; path = "src/DOUAudioAnalyzer+Default.m"; sourceTree = "<group>"; };
+		249FD7723827E393FE2ABCF3479330F4 /* DOUAudioFilePreprocessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioFilePreprocessor.h; path = src/DOUAudioFilePreprocessor.h; sourceTree = "<group>"; };
+		264BF4FD0179FB00AB8BFBFBE97E9A78 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		2A601D4648F21D5BEAB05A164ED90AF1 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		2BE6238BB00F1A804C08B4FA447582F3 /* libDOUAudioStreamer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDOUAudioStreamer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4822C5DCCA22A262896608C4D43CD0 /* DOUAudioVisualizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioVisualizer.h; path = src/DOUAudioVisualizer.h; sourceTree = "<group>"; };
+		2E60482147E41ABCC99FE0F2CB035C99 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		33260B47388064BECE85FCA11178DA44 /* DOUAudioFrequencyAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioFrequencyAnalyzer.m; path = src/DOUAudioFrequencyAnalyzer.m; sourceTree = "<group>"; };
+		34FA291EDF063A1D6DFA656CDDDEB724 /* DOUAudioEventLoop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioEventLoop.m; path = src/DOUAudioEventLoop.m; sourceTree = "<group>"; };
+		363939E16A5596358E27D244B5F442E9 /* Pods-MTMusicDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTMusicDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		388BF1700466A1A02C2F1DEBF5AE9516 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		399DD6262391D4AC435B3FFEF17BDDC4 /* DOUAudioStreamer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DOUAudioStreamer.xcconfig; sourceTree = "<group>"; };
+		3BBAFEB70312B2B2BD982E38F7993581 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		3FB955DEEDE3AD6C2BE615D3E26778D1 /* Pods-MTMusicDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTMusicDemoTests-dummy.m"; sourceTree = "<group>"; };
+		40C3AC3DB9D225F8B7B84886D8D1D02B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		41EA2A0CB4EE725B00A864ABF3609D8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		444C4DE92CB6E47AB0F0429F3208A4B7 /* DOUAudioStreamer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioStreamer_Private.h; path = src/DOUAudioStreamer_Private.h; sourceTree = "<group>"; };
+		44A1815EA8554AABE37E4B7941B9CE0C /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioAnalyzer_Private.h; path = src/DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
+		4542592AAD40C9F3128682DBBAF170D1 /* DOUAudioStreamer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioStreamer.m; path = src/DOUAudioStreamer.m; sourceTree = "<group>"; };
+		4B69D905D7692924F32B775D1F7D49C4 /* DOUAudioAnalyzer+Default.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DOUAudioAnalyzer+Default.h"; path = "src/DOUAudioAnalyzer+Default.h"; sourceTree = "<group>"; };
+		4CD11FDB828179AD269B74C115960E85 /* DOUAudioLPCM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioLPCM.m; path = src/DOUAudioLPCM.m; sourceTree = "<group>"; };
+		4D3EB31915627C8886B9932EB1C08699 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		4F0635BA828F4A0DDBF8F06AE2B25FD5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		4F3E6BFF5F07D9D5FE2D81CAA840F4AF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		4FDAB53C902E40D86D4551938804E04F /* DOUAudioStreamer+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DOUAudioStreamer+Options.h"; path = "src/DOUAudioStreamer+Options.h"; sourceTree = "<group>"; };
+		56F2D723FAFBB06FF3D4E2DB355E7041 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		58903F380365B051205618D2B14E153E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		5A60005D722313EE643E282B40BE1F15 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		5D152C132BF0850733B71A2DD02AA24C /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		5D805EDFF235053F1BAABFF620CAB569 /* DOUAudioRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioRenderer.m; path = src/DOUAudioRenderer.m; sourceTree = "<group>"; };
+		5FBD9225FBF039EC303E634995D48A33 /* DOUAudioFrequencyAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioFrequencyAnalyzer.h; path = src/DOUAudioFrequencyAnalyzer.h; sourceTree = "<group>"; };
+		63460E747B44A9A718D785682CB0A1D3 /* DOUEAGLView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUEAGLView.h; path = src/DOUEAGLView.h; sourceTree = "<group>"; };
+		63AD2D8D2FB04204CE550BF228733D84 /* DOUAudioSpatialAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioSpatialAnalyzer.h; path = src/DOUAudioSpatialAnalyzer.h; sourceTree = "<group>"; };
+		63C550A93D3D6FBEBFA38F4F3CAE5E1A /* Pods-MTMusicDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTMusicDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		65E97B6E1D2263F387D30223950AF12F /* DOUAudioStreamer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DOUAudioStreamer-prefix.pch"; sourceTree = "<group>"; };
+		667FF060052ADFDA45CB70437683E98E /* DOUAudioFileProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioFileProvider.h; path = src/DOUAudioFileProvider.h; sourceTree = "<group>"; };
+		6B0F26BE002184399CBA0C41C77FA9B5 /* DOUAudioPlaybackItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioPlaybackItem.m; path = src/DOUAudioPlaybackItem.m; sourceTree = "<group>"; };
+		6BAF5BFB81663799DA1133D4777FA181 /* Pods-MTMusicDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTMusicDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6D69DFC8A44AF68B730E60F87B61F70A /* Pods-MTMusicDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTMusicDemo.release.xcconfig"; sourceTree = "<group>"; };
+		71FCAC36397233B10D387B31442501CC /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		7263FC501FD7B4CC35F02FC9CB303B0D /* DOUAudioVisualizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioVisualizer.m; path = src/DOUAudioVisualizer.m; sourceTree = "<group>"; };
+		72E5070C2942E62B6DA0D6A5F875597A /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		7CEE13D4603C68052E8D229D432CE5C8 /* Pods-MTMusicDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTMusicDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E1708A9E2E3B14C5CC3193408A98F62 /* DOUAudioBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioBase.h; path = src/DOUAudioBase.h; sourceTree = "<group>"; };
+		7ED886D07896F29F600B74AAC8B32B50 /* DOUAudioFileProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioFileProvider.m; path = src/DOUAudioFileProvider.m; sourceTree = "<group>"; };
+		82138E441C9B4DF7CE73EDD4B6A3E077 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		834637FDFD226A739A5AC553D7AD5E44 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		835228776622211BD49CA67EF9F57F81 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		837D35B4F5EADE4EE48AD50E547EA691 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		850DCBF06E5EE48FBFBD202B14E60CF5 /* Pods-MTMusicDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MTMusicDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		865F2B96A60D9F3B77AE8F4806BC4DC5 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		87B3476F3D0697683CD8B9E010839B15 /* Pods-MTMusicDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTMusicDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8810AD6251EEBDFC91C926E3D5F871EC /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		8DBA0114DA4E23159189700B8474683A /* DOUAudioLPCM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioLPCM.h; path = src/DOUAudioLPCM.h; sourceTree = "<group>"; };
+		928160DA70482A68A4815C7F74A0ABDC /* Pods-MTMusicDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTMusicDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		92F73409FEC184F31279CB1DAE2798D0 /* DOUEAGLView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUEAGLView.m; path = src/DOUEAGLView.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97EA52A0DC5FF124AA9E2AE0872A0142 /* Pods-MTMusicDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTMusicDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		98D56C339D4E69AB2DD0BE71D66BF149 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		9DC62A8B0C4085E8466CB931DBCE027A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A0DE0387FF6FABF340D7CBFB7922A8D0 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		A44CF6A42B4C3A72D47AE36509A61E29 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		A80613BC93456A87E8909C106B927F4F /* DOUAudioEventLoop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioEventLoop.h; path = src/DOUAudioEventLoop.h; sourceTree = "<group>"; };
+		AB223FC1555AFCD98243F678AC7F1D67 /* Pods-MTMusicDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MTMusicDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC2ED3F83E80D76F932609831331A157 /* Pods-MTMusicDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTMusicDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		AD1A7154597370CF46E5837328F0E2A4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		AFE6A4B277FC8CE60266C0B257DA18F9 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		B2FED08AC3E4DF01C1516754B31670FC /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		B458808B5C7AF7D58AED0CD7830C64E1 /* Pods-MTMusicDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTMusicDemo-dummy.m"; sourceTree = "<group>"; };
+		BAFCF377302FD1352915BFA72CF3C53B /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		C0E1639C61935277047C8CB465D9A424 /* Pods-MTMusicDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTMusicDemo-resources.sh"; sourceTree = "<group>"; };
+		C0E3C389110AD31E0270BB95386176EF /* DOUAudioPlaybackItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioPlaybackItem.h; path = src/DOUAudioPlaybackItem.h; sourceTree = "<group>"; };
+		C15B88DF81DB187F4C8465FF97E40EED /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		C1FED2AB394B10CF7D22BF74C7AE0E33 /* DOUAudioAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioAnalyzer.m; path = src/DOUAudioAnalyzer.m; sourceTree = "<group>"; };
+		C35A8D5A65C4DF0704B1EB564EAAEB58 /* Pods-MTMusicDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTMusicDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C65655B6C8F6D4BCC4F9673F4544C6A9 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5AD9F664B7F175D3C784D92D791FB5 /* libPods-MTMusicDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTMusicDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC868E169665427A123A33F1B19AB64 /* DOUAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioFile.h; path = src/DOUAudioFile.h; sourceTree = "<group>"; };
+		CE68309B825E3BCFFAB4A83BAECDF333 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		D109FF5B6AE0825DDDA72EF9FE22CEA7 /* DOUSimpleHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUSimpleHTTPRequest.h; path = src/DOUSimpleHTTPRequest.h; sourceTree = "<group>"; };
+		D1AB4F28C3237A798B251D17227561CB /* libPods-MTMusicDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTMusicDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BE7856F469FF5FAF7BEE85911AA9DA /* DOUAudioStreamer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioStreamer.h; path = src/DOUAudioStreamer.h; sourceTree = "<group>"; };
+		D4659E90855BFEE499604A53D8DBEE95 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		D47955EDB765C4974F12E13A0A96F3C8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		DA7E10D2B1530CF7264979FF18B55091 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		DBA5F60CFAB992E8778969EEF8CAB129 /* Pods-MTMusicDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTMusicDemoTests-resources.sh"; sourceTree = "<group>"; };
+		DCEA871D28D62E10F5EA1C9647073261 /* Pods-MTMusicDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTMusicDemo-frameworks.sh"; sourceTree = "<group>"; };
+		DD9435F7D96FCEF0BA3FB5EBC8867275 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		E3F3F26C6DA51A85CFF37F14C63AB297 /* DOUAudioStreamer+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DOUAudioStreamer+Options.m"; path = "src/DOUAudioStreamer+Options.m"; sourceTree = "<group>"; };
+		E61B66EE6053BFCD4FCD9753787E1012 /* DOUMPMediaLibraryAssetLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUMPMediaLibraryAssetLoader.h; path = src/DOUMPMediaLibraryAssetLoader.h; sourceTree = "<group>"; };
+		E739ABAA22451333724280979E77CE65 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		E8DE16A138A81BC6003E2E23D64B98F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB1969077B21C6BF98708EB1A98DB8E7 /* libPods-MTMusicDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTMusicDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3D75A97C47A39B965E693AEAB9F647 /* DOUAudioStreamer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DOUAudioStreamer-dummy.m"; sourceTree = "<group>"; };
+		EC1F6C19B2CC93D6CD498B03B17298D3 /* NSData+DOUMappedFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+DOUMappedFile.h"; path = "src/NSData+DOUMappedFile.h"; sourceTree = "<group>"; };
+		ED2A6475B9C99D3FE813E20D0494757F /* Pods-MTMusicDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTMusicDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		F2F15088952400103B9F3EEBAB8D375A /* DOUAudioDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioDecoder.h; path = src/DOUAudioDecoder.h; sourceTree = "<group>"; };
+		F6DCBA52DA16DCB3366BA1E3A2D4444B /* DOUAudioRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOUAudioRenderer.h; path = src/DOUAudioRenderer.h; sourceTree = "<group>"; };
+		FA22846BE7CDF11E0B42EC092CDCBA76 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		FDC4A8C12A57E2F6A77301DE0960969F /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		FFE14E7B61FAE96F198CCD69F740F9FB /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		FFF59147E1F6BB9836F3B48F43D02760 /* DOUAudioSpatialAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOUAudioSpatialAnalyzer.m; path = src/DOUAudioSpatialAnalyzer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		037F2E449CBF3E39A93DADB42748BEFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3041F86E8648B4C596CCCB497B593D /* Foundation.framework in Frameworks */,
+				6A2B6DBDD08CD3F087CC56D354B48858 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61B227CB0B7A8B922D441D67F38680E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DFAB3B9FC002326D44A52CE6DFD57A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB00204520B23036E8BECD717B9860E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2EEA8892612C75B617E841B965E3A0 /* Accelerate.framework in Frameworks */,
+				FEC787F5585081E25DEE0E3B3769ED13 /* AudioToolbox.framework in Frameworks */,
+				CFBD269078732F653128E28C3FE7DC1B /* AVFoundation.framework in Frameworks */,
+				FD008E0D9346BC4D2287B50719AA829E /* CFNetwork.framework in Frameworks */,
+				569E6AA601234C855548AEA15EF491B7 /* CoreAudio.framework in Frameworks */,
+				BA77A67C22A6E7719679A40B26193CCE /* Foundation.framework in Frameworks */,
+				31FA7C846806699503E820967ACD3C0B /* MediaPlayer.framework in Frameworks */,
+				4B80195CC9E343CFBEF93240532BAD43 /* MobileCoreServices.framework in Frameworks */,
+				0AC78DD9AAAA1CCE7D0ACABEB36775FB /* OpenGLES.framework in Frameworks */,
+				38A7CC4F2BC041042712A5FA1BD2CB2F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8CBEB3E05896E21AB4A408C1DF483B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B076BD23A7FDC10D0C3F4DD0A4D232 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E6F4B195712341B51F095884F86A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33114B46571E61AA61C0EA66C608BD8F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		234F99125354A5237F7269BB9035C295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE6238BB00F1A804C08B4FA447582F3 /* libDOUAudioStreamer.a */,
+				D1AB4F28C3237A798B251D17227561CB /* libPods-MTMusicDemo.a */,
+				CB5AD9F664B7F175D3C784D92D791FB5 /* libPods-MTMusicDemoTests.a */,
+				EB1969077B21C6BF98708EB1A98DB8E7 /* libPods-MTMusicDemoUITests.a */,
+				C65655B6C8F6D4BCC4F9673F4544C6A9 /* libSDWebImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		368BD5321B041A15621BC2A09EEFEE0A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD1A7154597370CF46E5837328F0E2A4 /* Accelerate.framework */,
+				D47955EDB765C4974F12E13A0A96F3C8 /* AudioToolbox.framework */,
+				41EA2A0CB4EE725B00A864ABF3609D8C /* AVFoundation.framework */,
+				FA22846BE7CDF11E0B42EC092CDCBA76 /* CFNetwork.framework */,
+				56F2D723FAFBB06FF3D4E2DB355E7041 /* CoreAudio.framework */,
+				E8DE16A138A81BC6003E2E23D64B98F3 /* Foundation.framework */,
+				4F3E6BFF5F07D9D5FE2D81CAA840F4AF /* ImageIO.framework */,
+				4F0635BA828F4A0DDBF8F06AE2B25FD5 /* MediaPlayer.framework */,
+				40C3AC3DB9D225F8B7B84886D8D1D02B /* MobileCoreServices.framework */,
+				58903F380365B051205618D2B14E153E /* OpenGLES.framework */,
+				9DC62A8B0C4085E8466CB931DBCE027A /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4086E5C170DA91970DF096038F383764 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2E60482147E41ABCC99FE0F2CB035C99 /* NSData+ImageContentType.h */,
+				AFE6A4B277FC8CE60266C0B257DA18F9 /* NSData+ImageContentType.m */,
+				3BBAFEB70312B2B2BD982E38F7993581 /* SDImageCache.h */,
+				72E5070C2942E62B6DA0D6A5F875597A /* SDImageCache.m */,
+				17831A9A300B71F01821E95E65E36814 /* SDWebImageCompat.h */,
+				865F2B96A60D9F3B77AE8F4806BC4DC5 /* SDWebImageCompat.m */,
+				D4659E90855BFEE499604A53D8DBEE95 /* SDWebImageDecoder.h */,
+				837D35B4F5EADE4EE48AD50E547EA691 /* SDWebImageDecoder.m */,
+				DD9435F7D96FCEF0BA3FB5EBC8867275 /* SDWebImageDownloader.h */,
+				B2FED08AC3E4DF01C1516754B31670FC /* SDWebImageDownloader.m */,
+				71FCAC36397233B10D387B31442501CC /* SDWebImageDownloaderOperation.h */,
+				A44CF6A42B4C3A72D47AE36509A61E29 /* SDWebImageDownloaderOperation.m */,
+				C15B88DF81DB187F4C8465FF97E40EED /* SDWebImageManager.h */,
+				5D152C132BF0850733B71A2DD02AA24C /* SDWebImageManager.m */,
+				835228776622211BD49CA67EF9F57F81 /* SDWebImageOperation.h */,
+				FDC4A8C12A57E2F6A77301DE0960969F /* SDWebImagePrefetcher.h */,
+				E739ABAA22451333724280979E77CE65 /* SDWebImagePrefetcher.m */,
+				82138E441C9B4DF7CE73EDD4B6A3E077 /* UIButton+WebCache.h */,
+				834637FDFD226A739A5AC553D7AD5E44 /* UIButton+WebCache.m */,
+				98D56C339D4E69AB2DD0BE71D66BF149 /* UIImage+GIF.h */,
+				5A60005D722313EE643E282B40BE1F15 /* UIImage+GIF.m */,
+				4D3EB31915627C8886B9932EB1C08699 /* UIImage+MultiFormat.h */,
+				2A601D4648F21D5BEAB05A164ED90AF1 /* UIImage+MultiFormat.m */,
+				BAFCF377302FD1352915BFA72CF3C53B /* UIImageView+HighlightedWebCache.h */,
+				A0DE0387FF6FABF340D7CBFB7922A8D0 /* UIImageView+HighlightedWebCache.m */,
+				388BF1700466A1A02C2F1DEBF5AE9516 /* UIImageView+WebCache.h */,
+				1ADFEEFED784B488296676BF160A2E74 /* UIImageView+WebCache.m */,
+				DA7E10D2B1530CF7264979FF18B55091 /* UIView+WebCacheOperation.h */,
+				CE68309B825E3BCFFAB4A83BAECDF333 /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		45888532236862C21E08C565C1DA4B43 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				399DD6262391D4AC435B3FFEF17BDDC4 /* DOUAudioStreamer.xcconfig */,
+				EB3D75A97C47A39B965E693AEAB9F647 /* DOUAudioStreamer-dummy.m */,
+				65E97B6E1D2263F387D30223950AF12F /* DOUAudioStreamer-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DOUAudioStreamer";
+			sourceTree = "<group>";
+		};
+		55A432C364B560F946C2CFA4F7B63227 /* Pods-MTMusicDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				13FD61EDD2EB4547BF9C062E5683BAA7 /* Pods-MTMusicDemoTests-acknowledgements.markdown */,
+				87B3476F3D0697683CD8B9E010839B15 /* Pods-MTMusicDemoTests-acknowledgements.plist */,
+				3FB955DEEDE3AD6C2BE615D3E26778D1 /* Pods-MTMusicDemoTests-dummy.m */,
+				ED2A6475B9C99D3FE813E20D0494757F /* Pods-MTMusicDemoTests-frameworks.sh */,
+				DBA5F60CFAB992E8778969EEF8CAB129 /* Pods-MTMusicDemoTests-resources.sh */,
+				7CEE13D4603C68052E8D229D432CE5C8 /* Pods-MTMusicDemoTests.debug.xcconfig */,
+				97EA52A0DC5FF124AA9E2AE0872A0142 /* Pods-MTMusicDemoTests.release.xcconfig */,
+			);
+			name = "Pods-MTMusicDemoTests";
+			path = "Target Support Files/Pods-MTMusicDemoTests";
+			sourceTree = "<group>";
+		};
+		61E5CFA378B25087AEC94F784D217147 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7038FAB7147C32CF45087716AD7F1CA0 /* Pods-MTMusicDemo */,
+				55A432C364B560F946C2CFA4F7B63227 /* Pods-MTMusicDemoTests */,
+				FCE496E616BFB556A49BB0932EB31011 /* Pods-MTMusicDemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7038FAB7147C32CF45087716AD7F1CA0 /* Pods-MTMusicDemo */ = {
+			isa = PBXGroup;
+			children = (
+				850DCBF06E5EE48FBFBD202B14E60CF5 /* Pods-MTMusicDemo-acknowledgements.markdown */,
+				63C550A93D3D6FBEBFA38F4F3CAE5E1A /* Pods-MTMusicDemo-acknowledgements.plist */,
+				B458808B5C7AF7D58AED0CD7830C64E1 /* Pods-MTMusicDemo-dummy.m */,
+				DCEA871D28D62E10F5EA1C9647073261 /* Pods-MTMusicDemo-frameworks.sh */,
+				C0E1639C61935277047C8CB465D9A424 /* Pods-MTMusicDemo-resources.sh */,
+				C35A8D5A65C4DF0704B1EB564EAAEB58 /* Pods-MTMusicDemo.debug.xcconfig */,
+				6D69DFC8A44AF68B730E60F87B61F70A /* Pods-MTMusicDemo.release.xcconfig */,
+			);
+			name = "Pods-MTMusicDemo";
+			path = "Target Support Files/Pods-MTMusicDemo";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				EB57DDB3388FBC701046A1E93218737F /* Frameworks */,
+				8A0D897E8BF26225EB9FBE6AF67D8FFE /* Pods */,
+				234F99125354A5237F7269BB9035C295 /* Products */,
+				61E5CFA378B25087AEC94F784D217147 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A0D897E8BF26225EB9FBE6AF67D8FFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8FEED0A7A923A8EDAF216C02A5D8D9F /* DOUAudioStreamer */,
+				96878568A24DD7FFB4D7DFF82B109297 /* SDWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96878568A24DD7FFB4D7DFF82B109297 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				4086E5C170DA91970DF096038F383764 /* Core */,
+				FBFEF8F6AF504FBEAA14180742B273DD /* Support Files */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		E8FEED0A7A923A8EDAF216C02A5D8D9F /* DOUAudioStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				2202D9760B94924F3E3C5A3130CF1B14 /* DOUAudioAnalyzer.h */,
+				C1FED2AB394B10CF7D22BF74C7AE0E33 /* DOUAudioAnalyzer.m */,
+				4B69D905D7692924F32B775D1F7D49C4 /* DOUAudioAnalyzer+Default.h */,
+				22453314EF781C1168EA05CCAFEAACA6 /* DOUAudioAnalyzer+Default.m */,
+				44A1815EA8554AABE37E4B7941B9CE0C /* DOUAudioAnalyzer_Private.h */,
+				7E1708A9E2E3B14C5CC3193408A98F62 /* DOUAudioBase.h */,
+				F2F15088952400103B9F3EEBAB8D375A /* DOUAudioDecoder.h */,
+				02398D2FD64066EA50F1932A74F80399 /* DOUAudioDecoder.m */,
+				A80613BC93456A87E8909C106B927F4F /* DOUAudioEventLoop.h */,
+				34FA291EDF063A1D6DFA656CDDDEB724 /* DOUAudioEventLoop.m */,
+				CCC868E169665427A123A33F1B19AB64 /* DOUAudioFile.h */,
+				249FD7723827E393FE2ABCF3479330F4 /* DOUAudioFilePreprocessor.h */,
+				1AFC705F3A9F4B70628A4BDBBB5DA835 /* DOUAudioFilePreprocessor.m */,
+				667FF060052ADFDA45CB70437683E98E /* DOUAudioFileProvider.h */,
+				7ED886D07896F29F600B74AAC8B32B50 /* DOUAudioFileProvider.m */,
+				5FBD9225FBF039EC303E634995D48A33 /* DOUAudioFrequencyAnalyzer.h */,
+				33260B47388064BECE85FCA11178DA44 /* DOUAudioFrequencyAnalyzer.m */,
+				8DBA0114DA4E23159189700B8474683A /* DOUAudioLPCM.h */,
+				4CD11FDB828179AD269B74C115960E85 /* DOUAudioLPCM.m */,
+				C0E3C389110AD31E0270BB95386176EF /* DOUAudioPlaybackItem.h */,
+				6B0F26BE002184399CBA0C41C77FA9B5 /* DOUAudioPlaybackItem.m */,
+				F6DCBA52DA16DCB3366BA1E3A2D4444B /* DOUAudioRenderer.h */,
+				5D805EDFF235053F1BAABFF620CAB569 /* DOUAudioRenderer.m */,
+				63AD2D8D2FB04204CE550BF228733D84 /* DOUAudioSpatialAnalyzer.h */,
+				FFF59147E1F6BB9836F3B48F43D02760 /* DOUAudioSpatialAnalyzer.m */,
+				D1BE7856F469FF5FAF7BEE85911AA9DA /* DOUAudioStreamer.h */,
+				4542592AAD40C9F3128682DBBAF170D1 /* DOUAudioStreamer.m */,
+				4FDAB53C902E40D86D4551938804E04F /* DOUAudioStreamer+Options.h */,
+				E3F3F26C6DA51A85CFF37F14C63AB297 /* DOUAudioStreamer+Options.m */,
+				444C4DE92CB6E47AB0F0429F3208A4B7 /* DOUAudioStreamer_Private.h */,
+				2C4822C5DCCA22A262896608C4D43CD0 /* DOUAudioVisualizer.h */,
+				7263FC501FD7B4CC35F02FC9CB303B0D /* DOUAudioVisualizer.m */,
+				63460E747B44A9A718D785682CB0A1D3 /* DOUEAGLView.h */,
+				92F73409FEC184F31279CB1DAE2798D0 /* DOUEAGLView.m */,
+				E61B66EE6053BFCD4FCD9753787E1012 /* DOUMPMediaLibraryAssetLoader.h */,
+				02EE07C0D78E5B04E797929AF47F1439 /* DOUMPMediaLibraryAssetLoader.m */,
+				D109FF5B6AE0825DDDA72EF9FE22CEA7 /* DOUSimpleHTTPRequest.h */,
+				15A8659F40DE0AE82FDB915885F7631D /* DOUSimpleHTTPRequest.m */,
+				EC1F6C19B2CC93D6CD498B03B17298D3 /* NSData+DOUMappedFile.h */,
+				218918CCD22F80ECA78D66661C815FB8 /* NSData+DOUMappedFile.m */,
+				45888532236862C21E08C565C1DA4B43 /* Support Files */,
+			);
+			path = DOUAudioStreamer;
+			sourceTree = "<group>";
+		};
+		EB57DDB3388FBC701046A1E93218737F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				368BD5321B041A15621BC2A09EEFEE0A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBFEF8F6AF504FBEAA14180742B273DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				264BF4FD0179FB00AB8BFBFBE97E9A78 /* SDWebImage.xcconfig */,
+				8810AD6251EEBDFC91C926E3D5F871EC /* SDWebImage-dummy.m */,
+				FFE14E7B61FAE96F198CCD69F740F9FB /* SDWebImage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		FCE496E616BFB556A49BB0932EB31011 /* Pods-MTMusicDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB223FC1555AFCD98243F678AC7F1D67 /* Pods-MTMusicDemoUITests-acknowledgements.markdown */,
+				928160DA70482A68A4815C7F74A0ABDC /* Pods-MTMusicDemoUITests-acknowledgements.plist */,
+				363939E16A5596358E27D244B5F442E9 /* Pods-MTMusicDemoUITests-dummy.m */,
+				6BAF5BFB81663799DA1133D4777FA181 /* Pods-MTMusicDemoUITests-frameworks.sh */,
+				AC2ED3F83E80D76F932609831331A157 /* Pods-MTMusicDemoUITests-resources.sh */,
+				014108A858D40912283CFECA70DB5DDA /* Pods-MTMusicDemoUITests.debug.xcconfig */,
+				0A7C1DE3BBAAFC02B2ACC2AB4AF30DDB /* Pods-MTMusicDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-MTMusicDemoUITests";
+			path = "Target Support Files/Pods-MTMusicDemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		276430AFC11A0A5260283DF076F9555B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE116F263C2EC6CEF9797B32A825C279 /* NSData+ImageContentType.h in Headers */,
+				43C156894E74E1CB2C354D2F52E7A077 /* SDImageCache.h in Headers */,
+				B0086CC9E91F95DE51A2F132D8527BBF /* SDWebImageCompat.h in Headers */,
+				1947D6F3B2ADDAF25DBC819E91B1EB35 /* SDWebImageDecoder.h in Headers */,
+				C32F68133887752D00E2283F643530F3 /* SDWebImageDownloader.h in Headers */,
+				19810986F428B7D45388549C386B0364 /* SDWebImageDownloaderOperation.h in Headers */,
+				F027D73EAE4F9EAE0C97BA75C6FBDF59 /* SDWebImageManager.h in Headers */,
+				CB24DF934FADCCC68D04356470CCA4E8 /* SDWebImageOperation.h in Headers */,
+				587BBEACAEEFCDA7E8FE5CE10A50F2FD /* SDWebImagePrefetcher.h in Headers */,
+				EE12C7EA4336FB49BE1426264F3D8563 /* UIButton+WebCache.h in Headers */,
+				18EE8D33329021C98725861FF05294DF /* UIImage+GIF.h in Headers */,
+				4BD8773DECB27A83075DB5A4897A4658 /* UIImage+MultiFormat.h in Headers */,
+				DB2569CF824ED5A1A1443D4A26DF3CAC /* UIImageView+HighlightedWebCache.h in Headers */,
+				DEFCD2D1DB7540680461C58E9A1BDA61 /* UIImageView+WebCache.h in Headers */,
+				E1C85D873E45E797F287DF201DF2DC36 /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF00C9CB9E44B541E6002785920DAE19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4684ED0157A10C50B6EE8DDE32C914 /* DOUAudioAnalyzer+Default.h in Headers */,
+				DA76BB21D1FE399EEA1FFD8DA7D249DA /* DOUAudioAnalyzer.h in Headers */,
+				C25EBB7B652B85828281DEF0CBA6C9E3 /* DOUAudioAnalyzer_Private.h in Headers */,
+				2EF2857A858C62CE1C2F203A0FD70E10 /* DOUAudioBase.h in Headers */,
+				DD856498EFDEF474BEDBA2ED0F5211EB /* DOUAudioDecoder.h in Headers */,
+				02688A3AC1104171ADD7048DD3787CFA /* DOUAudioEventLoop.h in Headers */,
+				19980BF298B835DFA7A00EF7EF0FB691 /* DOUAudioFile.h in Headers */,
+				7B0CBF4EBD30C92AEE692533E181F7BD /* DOUAudioFilePreprocessor.h in Headers */,
+				AD0B55020BE616605CAF305E7902A016 /* DOUAudioFileProvider.h in Headers */,
+				2017E47DA83874EDEB9EF451AE4CA83C /* DOUAudioFrequencyAnalyzer.h in Headers */,
+				E858268814D1A5EC2F7BC3542EB834CF /* DOUAudioLPCM.h in Headers */,
+				F752B63B4E925CD5EF4562F3922DB9A9 /* DOUAudioPlaybackItem.h in Headers */,
+				3A514B1E6F5A34F4F2DD745C18F2FC63 /* DOUAudioRenderer.h in Headers */,
+				281C9550741C50DA99A3F55EC37A01F1 /* DOUAudioSpatialAnalyzer.h in Headers */,
+				3122D0AA7789106A4DAB1D9C3BA0F9A8 /* DOUAudioStreamer+Options.h in Headers */,
+				8A958560C6BB6168CF41BD59588ABEA6 /* DOUAudioStreamer.h in Headers */,
+				218E64C304FFBB084429E262097BF331 /* DOUAudioStreamer_Private.h in Headers */,
+				FC1B9333FA4F13DF59E29B99B149F1E9 /* DOUAudioVisualizer.h in Headers */,
+				05B638931DCA43D4FFA6B2D2A86115D7 /* DOUEAGLView.h in Headers */,
+				CBB2036D8F67093FFD19CAEFD65599B3 /* DOUMPMediaLibraryAssetLoader.h in Headers */,
+				C41D6DC16BB3583049D50710CD9D160B /* DOUSimpleHTTPRequest.h in Headers */,
+				E1EA75FDD2FA058C6C43239B3D33E084 /* NSData+DOUMappedFile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		480AD9E8F2AC2B32E2A7012F39545F66 /* Pods-MTMusicDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E88C2A80B25476337A06E719EF18C63 /* Build configuration list for PBXNativeTarget "Pods-MTMusicDemo" */;
+			buildPhases = (
+				EE8D2F3883BB0FA6C0D1C2A0AEE2FB35 /* Sources */,
+				D6E6F4B195712341B51F095884F86A20 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				412072B72115BFD4F334E4BF6D70779C /* PBXTargetDependency */,
+				60CEC5B5EAB81B914FC101A679BAD5CF /* PBXTargetDependency */,
+			);
+			name = "Pods-MTMusicDemo";
+			productName = "Pods-MTMusicDemo";
+			productReference = D1AB4F28C3237A798B251D17227561CB /* libPods-MTMusicDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8CBEF51C9FFA48DEEA91699F7BF560F8 /* Pods-MTMusicDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FB6D7C8276EFECF7C3B9AA27D9FD3B /* Build configuration list for PBXNativeTarget "Pods-MTMusicDemoTests" */;
+			buildPhases = (
+				E56766E530C0D2AB21FE14961C2752C7 /* Sources */,
+				61B227CB0B7A8B922D441D67F38680E4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MTMusicDemoTests";
+			productName = "Pods-MTMusicDemoTests";
+			productReference = CB5AD9F664B7F175D3C784D92D791FB5 /* libPods-MTMusicDemoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BC61BAB8570DF1BD907163FE0708B754 /* Pods-MTMusicDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3CA7146F93D8A24CB50DC7343CB70F /* Build configuration list for PBXNativeTarget "Pods-MTMusicDemoUITests" */;
+			buildPhases = (
+				E847DE156352763E0EB19215447FD0AE /* Sources */,
+				9F8CBEB3E05896E21AB4A408C1DF483B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MTMusicDemoUITests";
+			productName = "Pods-MTMusicDemoUITests";
+			productReference = EB1969077B21C6BF98708EB1A98DB8E7 /* libPods-MTMusicDemoUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D26A6D000EA63A2C3BBCF016605D3D4E /* DOUAudioStreamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC5EB2899E628D9EDF9CB532157ECD9 /* Build configuration list for PBXNativeTarget "DOUAudioStreamer" */;
+			buildPhases = (
+				A4D0874CD04D7FB7D6DA3AD0AE63EAFC /* Sources */,
+				7FB00204520B23036E8BECD717B9860E /* Frameworks */,
+				FF00C9CB9E44B541E6002785920DAE19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DOUAudioStreamer;
+			productName = DOUAudioStreamer;
+			productReference = 2BE6238BB00F1A804C08B4FA447582F3 /* libDOUAudioStreamer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE8140743ADD22ECAE58F4BD6594C55A /* SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF247EB327C40C0864DF8C70054A5417 /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildPhases = (
+				8E45EDF57D43F5921955BBEDE8BBAB80 /* Sources */,
+				037F2E449CBF3E39A93DADB42748BEFA /* Frameworks */,
+				276430AFC11A0A5260283DF076F9555B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = C65655B6C8F6D4BCC4F9673F4544C6A9 /* libSDWebImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 234F99125354A5237F7269BB9035C295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D26A6D000EA63A2C3BBCF016605D3D4E /* DOUAudioStreamer */,
+				480AD9E8F2AC2B32E2A7012F39545F66 /* Pods-MTMusicDemo */,
+				8CBEF51C9FFA48DEEA91699F7BF560F8 /* Pods-MTMusicDemoTests */,
+				BC61BAB8570DF1BD907163FE0708B754 /* Pods-MTMusicDemoUITests */,
+				FE8140743ADD22ECAE58F4BD6594C55A /* SDWebImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E45EDF57D43F5921955BBEDE8BBAB80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F27AE72BE611F8422EE1C882B05F3D9 /* NSData+ImageContentType.m in Sources */,
+				E8EE39217E8E7180E270C2BA9E4DD160 /* SDImageCache.m in Sources */,
+				ACDA041E1445229D49F72DFB418E97BB /* SDWebImage-dummy.m in Sources */,
+				578ED2C9E61155A8539158191D00C545 /* SDWebImageCompat.m in Sources */,
+				4797B015A298B17106FF371CCF68406B /* SDWebImageDecoder.m in Sources */,
+				C8B0A60AE557DAF64EEBBD804322AE76 /* SDWebImageDownloader.m in Sources */,
+				0FC0141E9D66998E2BC9EF318214FF41 /* SDWebImageDownloaderOperation.m in Sources */,
+				83A8059D21D6330AD5DF32AD39E9ABA9 /* SDWebImageManager.m in Sources */,
+				F5DBB0496CDA74AD20DF640BB706CC11 /* SDWebImagePrefetcher.m in Sources */,
+				B6E8C7DDAAAD30B44DDA8AB9678D9D34 /* UIButton+WebCache.m in Sources */,
+				EE3C36D25D11328E2D943C4B53D8ECFC /* UIImage+GIF.m in Sources */,
+				46CFCC1030AEAB5838F3F1D36FBE8987 /* UIImage+MultiFormat.m in Sources */,
+				20129C70970F21CFA98E19C09CD43304 /* UIImageView+HighlightedWebCache.m in Sources */,
+				84D9976D74888254766139786FC35ABA /* UIImageView+WebCache.m in Sources */,
+				A93C29DD00EE5872A12439672944E650 /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D0874CD04D7FB7D6DA3AD0AE63EAFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515B8D3A3DAB237434480661D93D0E27 /* DOUAudioAnalyzer+Default.m in Sources */,
+				607BCD6EB3DADAAEA14B97A122A916FC /* DOUAudioAnalyzer.m in Sources */,
+				C483169672651CBF5C5E59F5B2E3C1A5 /* DOUAudioDecoder.m in Sources */,
+				9E313EBFF35F7598A0E727EABA0ECA90 /* DOUAudioEventLoop.m in Sources */,
+				10502E01B8C2B1E1F37B392A064DEDE2 /* DOUAudioFilePreprocessor.m in Sources */,
+				77E78FB2117200F1DAD425BA6C004D9A /* DOUAudioFileProvider.m in Sources */,
+				FE20DE3DDB2A9BB792B0A1F287551DDB /* DOUAudioFrequencyAnalyzer.m in Sources */,
+				BDFF01E29219DCC25BCA914631475815 /* DOUAudioLPCM.m in Sources */,
+				5C89AAAFA66048023D99CD773AC769E5 /* DOUAudioPlaybackItem.m in Sources */,
+				1BF9FCDC89DD1C7EF39D0437799C5A46 /* DOUAudioRenderer.m in Sources */,
+				BB78302DC7CB7B6612A654392BA232F4 /* DOUAudioSpatialAnalyzer.m in Sources */,
+				04128B0E53194DE3C5164AC6DFC3D2F7 /* DOUAudioStreamer+Options.m in Sources */,
+				9AA464DB367DB91F7F79DA339BC3C170 /* DOUAudioStreamer-dummy.m in Sources */,
+				B2D4FA96F36032A793FABB1B3AC04376 /* DOUAudioStreamer.m in Sources */,
+				CB6711B5093C6B6C594943A608907071 /* DOUAudioVisualizer.m in Sources */,
+				A59DA6402E69C4BC3F19AA198068D6B1 /* DOUEAGLView.m in Sources */,
+				BD488B298157D668C004B59167FEC251 /* DOUMPMediaLibraryAssetLoader.m in Sources */,
+				D91E60246FC8DBE1ED99FADE1524F58A /* DOUSimpleHTTPRequest.m in Sources */,
+				96A9238D869289C03F849575D109CF22 /* NSData+DOUMappedFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E56766E530C0D2AB21FE14961C2752C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7EFDE99A10B78FCCE68BB96D1B950EC /* Pods-MTMusicDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E847DE156352763E0EB19215447FD0AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD801D5F6BBEFF3AD3815A0F825539E /* Pods-MTMusicDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8D2F3883BB0FA6C0D1C2A0AEE2FB35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC853AEDB799F21EDC593E02EAB383 /* Pods-MTMusicDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		412072B72115BFD4F334E4BF6D70779C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DOUAudioStreamer;
+			target = D26A6D000EA63A2C3BBCF016605D3D4E /* DOUAudioStreamer */;
+			targetProxy = 97B622EB42647C51E092C435D822F980 /* PBXContainerItemProxy */;
+		};
+		60CEC5B5EAB81B914FC101A679BAD5CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = FE8140743ADD22ECAE58F4BD6594C55A /* SDWebImage */;
+			targetProxy = 74217BEA444E960E13A7A69D6705BADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00BC7B134BB9C90A155470C0FE1CDD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A7C1DE3BBAAFC02B2ACC2AB4AF30DDB /* Pods-MTMusicDemoUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		593262A554FEFCAC17A8193917653269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399DD6262391D4AC435B3FFEF17BDDC4 /* DOUAudioStreamer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DOUAudioStreamer/DOUAudioStreamer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		67F1C8A9A4B613E5A7F47A01F4973E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264BF4FD0179FB00AB8BFBFBE97E9A78 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		74FCF84D0D4FEAEDE9D6E345F6EF6A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264BF4FD0179FB00AB8BFBFBE97E9A78 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		86148F82521617E063ACF9BFB9B1075E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D69DFC8A44AF68B730E60F87B61F70A /* Pods-MTMusicDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1597968BE7BBED43B0BA0DD89C803A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399DD6262391D4AC435B3FFEF17BDDC4 /* DOUAudioStreamer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DOUAudioStreamer/DOUAudioStreamer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4F69FC4E98B29B85ADDF0E6D0120341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35A8D5A65C4DF0704B1EB564EAAEB58 /* Pods-MTMusicDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CDD263BF910BD7F229F2E38399415FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014108A858D40912283CFECA70DB5DDA /* Pods-MTMusicDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA5DA3EC7F05462F4991DF8978B76D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97EA52A0DC5FF124AA9E2AE0872A0142 /* Pods-MTMusicDemoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6CFF90A84293B0574376635CD202CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CEE13D4603C68052E8D229D432CE5C8 /* Pods-MTMusicDemoTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FB6D7C8276EFECF7C3B9AA27D9FD3B /* Build configuration list for PBXNativeTarget "Pods-MTMusicDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6CFF90A84293B0574376635CD202CA1 /* Debug */,
+				DA5DA3EC7F05462F4991DF8978B76D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E88C2A80B25476337A06E719EF18C63 /* Build configuration list for PBXNativeTarget "Pods-MTMusicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F69FC4E98B29B85ADDF0E6D0120341 /* Debug */,
+				86148F82521617E063ACF9BFB9B1075E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3CA7146F93D8A24CB50DC7343CB70F /* Build configuration list for PBXNativeTarget "Pods-MTMusicDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD263BF910BD7F229F2E38399415FAC /* Debug */,
+				00BC7B134BB9C90A155470C0FE1CDD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC5EB2899E628D9EDF9CB532157ECD9 /* Build configuration list for PBXNativeTarget "DOUAudioStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1597968BE7BBED43B0BA0DD89C803A1 /* Debug */,
+				593262A554FEFCAC17A8193917653269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF247EB327C40C0864DF8C70054A5417 /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F1C8A9A4B613E5A7F47A01F4973E70 /* Debug */,
+				74FCF84D0D4FEAEDE9D6E345F6EF6A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
